@@ -2,10 +2,11 @@
 
 Console.Write(@"------Arquivos-------
 1 - Exercício 01");
-int exercicioUsuario = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Digite a opção desejada: ");
+var exercicioUsuario = Convert.ToInt32(Console.ReadLine());
 
 if(exercicioUsuario == 1)
 {
-    Exercicio01 exercico01 = new Exercicio01();
+    var exercico01 = new Exercicio01();
     exercico01.Executar();
 }
